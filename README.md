@@ -6,7 +6,7 @@ The purpose of this project was to design and implement an application with the 
 
 For optimal performance it is recommended to use Google Chrome browser.
 
-The Project can be viewed [here](https://.herokuapp.com/ ).
+The Project can be viewed [here](https://guitar-world-shop.herokuapp.com/ ).
  
 ### UX Design
 
