@@ -20,15 +20,15 @@ The approach to the SDLC included the following phases:
 * User acceptance.
 * Deployment.
 
-**User requirements gathering** - First part of the requirements gathering phase of this project included interviewing a movie critic
-to find out what they would like to see as key features on a movie review application. Second part of the requirements gathering 
-phase included researching what a typical user would like to see as key functionalities in searching movie reviews on an 
+**User requirements gathering** - First part of the requirements gathering phase of this project included interviewing a musician
+to find out what they would like to see as key features on an online instrument shop application. Second part of the requirements gathering 
+phase included researching what a typical user would like to see as key functionalities in searching instrument reviews on an 
 application.
 
 **Functional Specification** - Having gathered the user requirements a functional specification was developed.
 This functional specification included key features such as 
-* Input template
-* Data entry form
+* Input template (admin)
+* Data entry form (admin)
 * Search functionality for finding instrument
 * One URL which allows you to submit or search an instrument
 * Ease of use
@@ -69,13 +69,14 @@ of successful testing mentioned previously. The application will be maintained i
 Deployment of future updates will be controlled within a maintenance window which will be notified to users to minimise disruption.  
 
 #### Future Implements:
-* Categories for Instruments
+* Categories for different Instruments
 * One Click feature for instrument ratings (1-5 stars)
 
 
 #### Credits
-* All review information used on version 1.0 has been taken from [IMDb.com](hhtp//:www.imdb.com).
-* Images taken from [Google](http//:www.google.com) images.
+* All spec information used on version 1.0 has been taken from [IMDb.com](hhtp//:www.musicmaker.ie).
+* Images taken from [Google](http//:www.google.com) images and Pixabay.
+* This website was only created for educational purposes. 
 
 ##### Acknowledements
 * User **Clare Kirwan**. 
