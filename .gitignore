@@ -374,17 +374,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-django_todo/__init__.py
-django_todo/settings.py
-django_todo/urls.py
-django_todo/wsgi.py
-manage.py
-env.py 
-products/migrations/0001_initial.py
-search/__init__.py
-search/admin.py
-search/apps.py
-search/migrations/
-search/models.py
-search/tests.py
-search/views.py
+
