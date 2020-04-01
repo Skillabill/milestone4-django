@@ -1,6 +1,6 @@
 body {
     font-family: Arial;
-    background-image: url("../images/");
+    background-image: url("images/");
 }
 
 .jumbotron {
@@ -67,4 +67,5 @@ caption p {
 
 .product-description {
     min-height: 40px;
+    max-height: 100px;
 }
