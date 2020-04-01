@@ -22,19 +22,21 @@
                 </button>
             <div id="navbarNavAltMarkup" class="navbar-collapse collapse">
                 <div class="navbar-nav">
+                    <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
-                        <a href="{% url 'profile' %}">Profile</a>
-                        <a href="{% url 'logout' %}">Log Out</a>
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                        <li><a href="{% url 'logout' %}">Log Out</a></li>
                     {%  else %}
-                        <a href="{% url 'registration' %}">Register</a>
-                        <a href="{% url 'login' %}">Log In</a>
+                        <li><a href="{% url 'registration' %}">Register</a></li>
+                        <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
-                        <a href="{% url 'view_cart' %}">
+                        <li><a href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
-                         </a>
+                         </a></li>
+                    </ul>
                 </div>
             </div>
     </nav>
