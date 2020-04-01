@@ -2,8 +2,8 @@
 {% block content %}
 
 
-<div class="container mt-5">
-    <div class="card-deck">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
     {% for product in products %}
         <div class="thumbnail">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height: 300px; object-fit: cover;" alt="image"></div>
@@ -21,6 +21,6 @@
             </form>
         </div>
         {% endfor %}
-    </div>
+  </div>
 </div>
 {% endblock %}
