@@ -6,6 +6,7 @@
     <div class="card-deck">
     {% for product in products %}
         <div class="card">
+            <div class="card-body">
             <div class="product img-fluid" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}'); height: 300px; object-fit: cover;" alt="image"></div>
             <h3>{{ product.name }}</h3>
                 <p class="product.description">{{ product.description }}</p>
@@ -15,10 +16,11 @@
                 <div class="input-group">
                     <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
                     <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
+                        <button class="btn btn-success" type="submit">Add</button>
                     </span>
                 </div>
             </form>
+            </div>
         </div>
         {% endfor %}
     </div>
