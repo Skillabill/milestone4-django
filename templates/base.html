@@ -32,7 +32,7 @@
                 <li><a class="nav-item nav-link" href="{% url 'login' %}">Log In</a></li>
                 {% endif %}
                 <li><a class="nav-item nav-link" href="{% url 'view_cart' %}">
-                    <i class="fa fa-shipping-cart"></i>Cart
+                    <span class="fas fa-shopping-cart"></span>Cart
                     {% if product_count > 0 %}
                     <label class="badge badge-warning">{{ product_count }}</label>
                     {% endif %}
