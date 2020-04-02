@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecdb61fd-03c0-4a64-9e2a-9fe2a17d4fa0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/products/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products.html" afterDir="false" />
-    </list>
+    <list default="true" id="ecdb61fd-03c0-4a64-9e2a-9fe2a17d4fa0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +193,17 @@
             <path>
               <item name="Milestone4-Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="Milestone4-Django" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Milestone4-Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Milestone4-Django" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Milestone4-Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Milestone4-Django" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -219,8 +228,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\static\images" />
       <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\media\images" />
+      <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\static\images" />
       <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\media" />
       <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\images" />
       <recent name="C:\Users\user\PycharmProjects\Milestone4-Django\checkout\templates" />
@@ -336,8 +345,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="895" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1381" height="895" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.1747212" />
       <window_info id="Structure" order="1" sideWeight="0.50153846" side_tool="true" weight="0.12381454" />
