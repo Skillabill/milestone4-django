@@ -41,7 +41,8 @@
                 </a></li>
                 <li>
                     <form action="{% url 'search' %}" method="get" class="form-inline justify-content-end">
-                        <input class="form-control mr-sm-2" type="text" name="q"  placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search"
+                               aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </li>
@@ -58,9 +59,11 @@
     </div>
 </div>
 {% endif %}
-<div class="jumbotron">
-    <h1>Guitar World</h1>
-    <p>A World of Guitars</p>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Guitar World</h1>
+        <p>A World of Guitars</p>
+    </div>
 </div>
 <div class="container">
 
@@ -80,6 +83,7 @@
          $(document).ready(function(){
             $('.sidenav').sidenav();
             });
+
 
 
 </script>
