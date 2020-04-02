@@ -17,8 +17,6 @@
                         <h3>{{ item.product.name }}</h3>
                         <!--<p class="product-description">{{ item.product.description }}</p>-->
                         <p>{{ item.product.price }}</p>
-                        <p>
-
                         <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                             {% csrf_token %}
                             <div class="form-group">
@@ -32,7 +30,6 @@
                             <button type="submit" class="btn btn-primary" value="1">Amend
                             </button>
                         </form>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -43,6 +40,7 @@
 <div class="container row">
     <p>Total</p>
     <p><span class="fas fa-euro-sign"></span>{{ total }}</p>
+    <br><br>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
 </div>
 
