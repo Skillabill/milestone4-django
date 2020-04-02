@@ -19,7 +19,9 @@ body {
   height: auto;
 }
 
-
+.nav-item nav-link text-white:hover {
+    color: blue;
+}
 
 .icon-bar {
     background-color: #fff;
