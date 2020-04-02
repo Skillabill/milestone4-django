@@ -9,7 +9,7 @@
                 <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top product" alt="...">
                 <div class="card-body">
                     <h5 class="product_name">{{ product.name }}</h5>
-                     <p><span> <i class="fas fa-euro-sign"></i></span>{{ product.price }}</p>
+                     <p><span class="fas fa-euro-sign"></span>{{ product.price }}</p>
                     <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}
                 <div class="input-group">
