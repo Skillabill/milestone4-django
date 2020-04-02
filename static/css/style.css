@@ -50,10 +50,6 @@ body {
     margin: 0 auto;
 }
 
-caption p {
-    word-wrap: break-word;
-}
-
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
