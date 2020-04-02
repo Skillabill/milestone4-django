@@ -10,7 +10,7 @@ body {
 }
 
 .jumbotron {
-  background-image: url(image/jumbotron.jpg);
+  background-image: url(static/image/jumbotron.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -48,6 +48,10 @@ body {
     width: 150px;
     height: 150px;
     margin: 0 auto;
+}
+
+caption p {
+    word-wrap: break-word;
 }
 
 .row.row-flex {
