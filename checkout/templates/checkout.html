@@ -24,7 +24,7 @@
                     <h3>{{ item.product.name }}</h3>
                     <p class="product-description">{{ item.product.description }}</p>
                     <p>{{ item.quantity }}</p>
-                    <p>item.product.price</p>
+                    <p><span class="fas fa-euro-sign"></span>item.product.price</p>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
 </div>
 <div class="row">
     <p>Total</p>
-    <p><span class="fas fa-shopping-cart"></span>{{ total }}</p>
+    <p><span class="fas fa-euro-sign"></span>{{ total }}</p>
 </div>
 
 <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
