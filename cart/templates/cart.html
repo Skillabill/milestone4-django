@@ -13,24 +13,22 @@
             <div class="card" style="width: 16rem;">
                 <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top product" alt="...">
                 <div class="card-body">
-                    <div class="caption">
-                        <h3>{{ item.product.name }}</h3>
-                        <!--<p class="product-description">{{ item.product.description }}</p>-->
-                        <p>{{ item.product.price }}</p>
-                        <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                            {% csrf_token %}
-                            <div class="form-group">
-                                <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                                <div class="input-group">
-                                    <div class="input-group-addon">Qty</div>
-                                    <input name="quantity" type="number" min="0" max="999" class="form-control">
-                                    <div class="input-group-addon">{{item.quantity}}</div>
-                                </div>
+                    <h5 class="product_name">{{ product.name }}</h5>
+                    <!--<p class="product-description">{{ item.product.description }}</p>-->
+                    <p><span class="fas fa-euro-sign"></span>{{ item.product.price }}</p>
+                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">Qty</div>
+                                <input name="quantity" type="number" min="0" max="999" class="form-control">
+                                <div class="input-group-addon">{{item.quantity}}</div>
                             </div>
-                            <button type="submit" class="btn btn-primary" value="1">Amend
-                            </button>
-                        </form>
-                    </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" value="1">Amend
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -40,7 +38,6 @@
 <div class="container row">
     <p>Total</p>
     <p><span class="fas fa-euro-sign"></span>{{ total }}</p>
-    <br><br>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button">Checkout</a>
 </div>
 
