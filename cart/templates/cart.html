@@ -13,22 +13,25 @@
             <div class="card" style="width: 16rem;">
                 <img src="{{ MEDIA_URL }}{{ product.image }}" class="card-img-top product" alt="...">
                 <div class="card-body">
-                    <h5 class="product_name">{{ product.name }}</h5>
-                    <!--<p class="product-description">{{ item.product.description }}</p>-->
-                    <p><span class="fas fa-euro-sign"></span>{{ item.product.price }}</p>
-                    <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">Qty</div>
-                                <input name="quantity" type="number" min="0" max="999" class="form-control">
-                                <div class="input-group-addon">{{item.quantity}}</div>
+                    <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+                    <div class="caption">
+                        <h3>{{ item.product.name }}</h3>
+                        <!--<p class="product-description">{{ item.product.description }}</p>-->
+                        <p><span class="fas fa-euro-sign"></span>{{ item.product.price }}</p>
+                        <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">Qty</div>
+                                    <input name="quantity" type="number" min="0" max="999" class="form-control">
+                                    <div class="input-group-addon">{{item.quantity}}</div>
+                                </div>
                             </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary" value="1">Amend
-                        </button>
-                    </form>
+                            <button type="submit" class="btn btn-primary" value="1">Amend
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
