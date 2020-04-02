@@ -15,7 +15,7 @@
 <body>
     <!-- Fixed masthead -->
        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark">
-           <a class="navbar-brand" href="/">Guitar World</a>
+           <a class="navbar-brand text-light" href="/">Guitar World</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,13 +24,13 @@
                 <div class="navbar-nav">
                     <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
-                        <li><a href="{% url 'logout' %}">Log Out</a></li>
+                        <li><a class="nav-item nav-link active text-white" href="{% url 'profile' %}">Profile</a></li>
+                        <li><a class="nav-item nav-link active text-white" href="{% url 'logout' %}">Log Out</a></li>
                     {%  else %}
-                        <li><a href="{% url 'registration' %}">Register</a></li>
-                        <li><a href="{% url 'login' %}">Log In</a></li>
+                        <li><a class="nav-item nav-link active text-white" href="{% url 'registration' %}">Register</a></li>
+                        <li><a class="nav-item nav-link active text-white" href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
-                        <li><a href="{% url 'view_cart' %}">
+                        <li><a class="nav-item nav-link active text-white" href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
